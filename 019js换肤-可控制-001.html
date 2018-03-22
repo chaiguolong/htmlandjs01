@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="StyleSheet" type="text/css" href="1-001.css" id="link1">
+    <script type="text/javascript">
+        
+        window.onload = function(){
+
+            var oBtn01 = document.getElementById('btn01');
+
+            var oBtn02 = document.getElementById('btn02');
+
+            oBtn01.onclick = skin01;
+
+            oBtn02.onclick = skin02;
+
+        }
+
+        function skin01(){
+            
+            var oLink = document.getElementById('link1');
+
+            oLink.href = '1-001.css';
+        };
+        
+        function skin02(){
+            
+            var oLink = document.getElementById('link1');
+
+            oLink.href = '2-001.css';    
+        }
+    </script>
+</head>
+<body>
+    <form action="/">
+       <!-- <input id="btn01" type="button" value="皮肤01" name="name" onclick="skin01()"> -->
+       <!-- <input id="btn02" type="button" value="皮肤02" name="name" onclick="skin02()"> -->
+       <input id="btn01" type="button" value="皮肤01" name="name">
+       <input id="btn02" type="button" value="皮肤02" name="name">
+       
+       <div class="div01"></div>
+       <div class="div02"></div>
+   </form>
+</body>
+</html>

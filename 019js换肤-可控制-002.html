@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>换肤</title>
+    <link rel="stylesheet" type="text/css" href="1-002.css" id="link1" />
+    <script type="text/javascript">
+        
+        function skin01(){
+
+            var oLink = document.getElementById('link1');
+
+            oLink.href = '1-002.css';
+        }
+
+        function skin02(){
+
+            var oLink = document.getElementById('link1');
+
+            oLink.href = '2-002.css';
+        }
+    </script>
+</head>
+<body>
+   <input id="btn01" type="button" name="name" value="皮肤01" onclick="skin01()">
+   <input id="btn02" type="button" name="name" value="皮肤02" onclick="skin02()">
+</body>
+</html>
